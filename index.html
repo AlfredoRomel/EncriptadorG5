@@ -3,31 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-with,initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <header>
-    <h1>Encriptador</h1>
-    <img src="Vector.png" </header>
+    <div class="titulo">
+        <h1>Encriptador de Texto</h1>
+        <img src="Vector.png">
+    </div>
+</header>
 
-    <body>
-        <div class="container">
-            <div class="card">
-                <div class="card-header">
-                    <textarea id="text" placeholder="Ingrese el texto aqui" cols="90" rows="20"></textarea>
-                    <h5>solo letras minusculas y sin acentos</h5>
-                </div>
-                <div class="card-buttons">
+<body>
+    <div class="container">
+        <div class="cardcontainer">
+            <div class="cardencriptador">
+                <textarea id="text" placeholder="Ingrese el texto aqui" rows="40" cols="80"></textarea>
+                <h5>solo letras minusculas y sin acentos</h5>
+                <div id="buttons">
                     <input type="button" value="Encriptar">
                     <input type="button" value="Desencriptar">
                 </div>
-                <div class="card-body">
-                    <img src="Muñeco.png">
-                    <label for="">Ningun mensaje fue encontrado</label>
+            </div>
+            <div class="cardrespuesta">
+                <img src="Muñeco.png">
+                <h5>Ningun mensaje fue encontrado</h5>
                     <h5>Ingresa el text que desees emcriptar o desenmcriptar</h5>
-                </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 
 </html>
