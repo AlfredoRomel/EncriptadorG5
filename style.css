@@ -1,53 +1,48 @@
-@media screen and(max-width:800px) {}
-
 header {
-    max-width: 100%;
-    height: 5vh;
-    background-color: rgb(174, 171, 230);
-    padding: 10px;
-}
-
-img {
-    width: auto;
-    height: auto;
+    background-color: rgb(238, 35, 35);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    justify-content: center;
 }
 
 h3 {
-    color: rgb(19, 17, 92);
     font-size: 2.5rem;
-    padding-right: 100px;
+    font-weight: bold;
+    margin-right: 2rem;
 }
 
 body {
-    max-width: 100%;
-    height: auto;
-    background-color: rgb(3, 11, 61);
-}
-
-.titulo {
-    display: flex;
-    justify-content: center;
+    background-color: rgb(111, 111, 111);
+    height: 100%;
+    width: 100%;
 }
 
 .container {
-    background-color: aqua;
-    max-width: 90%;
-    min-height: 90vh;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    background-color: rgb(243, 121, 121);
+    width: 90%;
+    min-height:95vh;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: relative;
+}
 
+.cardencriptador {
+    background-color: rgb(16, 4, 196);
+    width: 40%;
+    height: 85vh;
+    margin: auto;
 }
-.cardencriptador .cardrespuesta{
-    position: absolute;
-    transform: translate(0,50%);
-}
+
 textarea{
-    width: 100%;
-    height: 85%;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+.cardrespuesta {
+    background-color: rgb(62, 55, 154);
+    width: 40%;
+    height: 95%;
+    margin: auto;
 }
