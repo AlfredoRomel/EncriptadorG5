@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=divice-with,initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="codigo.js"></script>
     <title>Document</title>
 </head>
 <header>
@@ -20,19 +19,18 @@
             <textarea id="text" placeholder="Ingrese el texto aqui"></textarea>
             <h5> &#9406 solo letras minusculas y sin acentos</h5>
             <div id="buttons">
-                <input class="boton" type="button" value="Encriptar">
-                <input class="boton" type="button" value="Desencriptar">
+                <input class="boton" id='Encripta' type="button" value="Encriptar">
+                <input class="boton" id='Desencripta' type="button" value="Desencriptar">
             </div>
         </div>
-        <div class="cardrespuesta">
+        <div class="cardrespuesta" id="respuesta">
             <img src="Muñeco.png">
             <div class="mensaje">
                 <h5>Ningun mensaje fue encontrado</h5>
                 <h5>Ingresa el text que desees emcriptar o desenmcriptar</h5>
-                <input class="boton" type="button" value="copiar">
             </div>
         </div>
     </div>
 </body>
-
+<script src="codigo.js"></script>
 </html>

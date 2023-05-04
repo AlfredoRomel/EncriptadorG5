@@ -91,4 +91,12 @@ h5{
     border-color: rgb(255, 115, 21);
 }
 
+#miBoton {
+    position: absolute;
+    height:40px ;
+    width: 40%;
+    left: 15px;
+    bottom: 20px;
+  }
+
     
