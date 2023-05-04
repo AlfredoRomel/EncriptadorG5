@@ -42,6 +42,7 @@ function validar(cadenaInicial) {
     var regx =/[A-Z0-9!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?~\u00A1-\uFFFF]/g;
 
     if (regx.test(cadenaInicial)) {
+        respuesta.innerHTML= "<img src='Muñeco.png'><div class='mensaje'><h5>Ningun mensaje fue encontrado</h5> <h5>Ingresa el text que desees emcriptar o desenmcriptar</h5></div>"
         alert("Su texto es invalido porfavor revise que no contenga Mayusculas o numeros");
     } else {
         return true;
