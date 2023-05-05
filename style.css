@@ -50,7 +50,7 @@ textarea{
     border-radius: 3%;
     text-align: center;
     font: 2rem bold;
-    background-color: rg;
+    background-color: rgb(250, 222, 204);
 }
 .cardrespuesta {
     background-color: rgb(172, 172, 172);
@@ -80,7 +80,7 @@ h5{
     margin-top: 70vh;    
 }
 .boton{
-    background-color: rgb(233, 232, 232);
+    background-color: rgb(185, 137, 137);
     height:40px ;
     width: 20%;
     border-radius:15px;
@@ -101,4 +101,44 @@ h5{
 #respuesta{
     font-size: 2rem;
 }
+@media screen and (max-width:800px) {
+    .container {
+        background-color: rgb(191, 190, 190);
+        width: 95%;
+        min-height:180vh;
+        margin: auto;
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .cardencriptador {
+        background-color: rgb(150, 150, 150);
+        width: 95%;
+        height: 85vh;
+        margin: auto;
+        padding-top: 1rem;
+        text-align: center;
+        position: relative;
+        border-radius: 20px;
+        border:solid rgb(127, 127, 127) 5px ;
+        top:10px;
     
+    }
+    .cardrespuesta {
+        background-color: rgb(172, 172, 172);
+        width: 95%;
+        height: 85vh;
+        margin: auto;
+        padding-top: 1rem;
+        text-align: center;
+        position: relative;
+        border-radius: 3% ;
+        border:dashed rgb(65, 65, 65) 5px ;
+        top:20px;
+    
+    }
+    
+}
