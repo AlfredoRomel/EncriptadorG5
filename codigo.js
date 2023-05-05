@@ -14,24 +14,24 @@ var cadenaFinal = "";
 
 //evento click en encriptar
 Encriptar.addEventListener('click', function () {
+    Reset();
     //variable que almacena el texto a encriptar
     cadenaInicial = document.getElementById("text").value;
     if (validar(cadenaInicial)) {
         textFinal = encriptar(cadenaInicial);
         respuesta.innerHTML = textFinal + boton;
-        cadenaInicial = "";
     }
 });
 
 
 //evento click en desencriptar
 Desencriptar.addEventListener('click', function () {
+    Reset();
     //variable que almacena el texto a desencriptar
     cadenaInicial = document.getElementById("text").value;
     if (validar(cadenaInicial)) {
         textFinal = desencriptar(cadenaInicial);
         respuesta.innerHTML = textFinal + boton;
-        cadenaInicial = "";
     }
 });
 
@@ -39,10 +39,16 @@ Desencriptar.addEventListener('click', function () {
 function copiarTexto() {
     navigator.clipboard.writeText(textFinal)
         .catch((error) => alert(`Error al copiar el texto: ${error}`));
-    cadenaInicial = "";
+        Reset();
 }
 
-
+//realiza el borrado de datos en las variables de entorno
+function Reset() {
+    cadenaInicial = "";
+    cadenaFinal = "";
+    textFinal = "";
+    //console.log("variables : C F :" + cadenaFinal + "C I : " + "T F" + textFinal);
+}
 
 
 //realiza la validacion de existencia de numero, mayusculas o caracteres especiales en la cadena
@@ -81,7 +87,7 @@ function encriptar(cadenaInicial) {
 
             default:
                 cadenaFinal = cadenaFinal + cadenaInicial[i];
-                cadenaFinal = cadenaFinal.replace("undefined", "");
+                //cadenaFinal = cadenaFinal.replace("undefined", "");
                 break;
         }
     }
