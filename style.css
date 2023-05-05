@@ -50,7 +50,7 @@ textarea{
     border-radius: 3%;
     text-align: center;
     font: 2rem bold;
-    background-color: rg;
+    background-color: rgb(250, 222, 204);
 }
 .cardrespuesta {
     background-color: rgb(172, 172, 172);
@@ -80,7 +80,7 @@ h5{
     margin-top: 70vh;    
 }
 .boton{
-    background-color: rgb(233, 232, 232);
+    background-color: rgb(185, 137, 137);
     height:40px ;
     width: 20%;
     border-radius:15px;
